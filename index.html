@@ -17,26 +17,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Charmonman&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
   <header>
     <div id="mySidepanel" class="sidepanel">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
+      <a href="#about">About</a>
+      <a href="#books">My Books</a>
+      <a href="#">Online writings</a>
       <a href="#">Contact</a>
+      <button class="btn btn-primary" style="margin: 30px;" onclick="closeNav()">Close</button>
     </div>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar  navbar-light bg-light" style="position: fixed; width: 100%; z-index: 1;">
       <div class="container-fluid">
         <button class="openbtn" onclick="openNav()">&#9776;</button>
-        <a class="navbar-brand" href="#"
-          style="margin-right: auto; padding-left: 5px; font-family:'Kaushan Script', cursive; font-size: 35px; color:#A38A00 ;">Athira
+        <a class="navbar-brand"  href="#" id="name"
+          style="margin-right: auto; padding-left: 5px; font-size: 35px;">Athira
           VK</a>
-        <a class="navbar-brand" href="#"><i class="fab fa-facebook"></i> </a>
-        <a class="navbar-brand" href="#"><i class="fab fa-instagram"></i></a>
-        <a class="navbar-brand" href="#"><i class="fab fa-blogger"></i></a>
+        <a class="navbar-brand" href="https://www.facebook.com/athira.ra.35"><i class="fab fa-facebook" style="font-size: 30px;"></i> </a>
+        <a class="navbar-brand" href="#"><i class="fab fa-instagram" style="font-size: 30px;"></i></a>
+        <a class="navbar-brand" href="#"><i class="fab fa-blogger" style="font-size: 30px;"></i></a>
         <div>
           <form action="" >
             <input type="text" class="form-control" style="float: left; width: 150px; margin-right: 5px;"> 
@@ -53,7 +59,7 @@
       <div class="col-md-6 newrelease">
         <div>
           <img  id="bgbook"src="images/book1.jpg" alt="">
-          <div style="padding-left: 35px;">
+          <div style="padding-left: 35px; padding-top: 20px;">
             <h5>New Book Release</h5>
           <h3>അഴുക്കുപാട് </h3>
           <P>മുറിവേറ്റവരും പൊടിഞ്ഞുവീണവരും </P>
@@ -69,7 +75,76 @@
     </div>
   </div>
   </section>
+  <section class="otherbg">
+    <div class="container">
+      <div class="row">
+        <h3>ALL BOOKS</h3>
+        <div class="booksreleased" id="books">
+          <img  src="images/book2.png" class="bookimg" alt="Book">
+          <img  src="images/book2.png" class="bookimg" alt="Book">
+          <img  src="images/book2.png" class="bookimg" alt="Book">
+          <img  src="images/book2.png" class="bookimg" alt="Book">
+          <img  src="images/book2.png" class="bookimg" alt="Book">
+          <img  src="images/book2.png" class="bookimg" alt="Book">
+          <img  src="images/book2.png" class="bookimg" alt="Book">
+          <img  src="images/book2.png" class="bookimg" alt="Book">
+         
+          
+        </div>
+      </div>
+    </div>
+  </section>
+<section>
+  <div class="container row col-md-12">
+    <div class="bio">
+      
+      <div>
+        <div class="biowritting" id="about" >
+          <p >
+            <h3>About</h3>
+            <hr>
+                 Athira V K, hailing from Pattambi, Palakkad district did her Under Graduation and Post Graduation in English Language and Literature from two educational institutions  that comes under Calicut University. She has been penning down in various social media platforms for more than few years now and has to her credit varoous accounts in yourquote, blogspot, wordpress, Instagram, facebook and other online publishing site. She has written five books that got published from Notionpress publications and educreations as well. Dreaming to accomplish her career in writing, She is currently working as a content writer at Matglobers.
+          </p>
+        </div>
+        <img class="bioimg" src="images/bio.jpg" alt="">
+        
+        
+      </div>
+    </div>
+    <div class="card">
+      <div class="latest">
+        <h3>Latest News</h3> 
+        
+        <p>______________________</p>
+        <div>
+          <P>........No New Updates.....</P>
+        </div>
+      </div>
+    </div>
+    
 
+  </div>
+</section>
+<footer>
+  <div class=" footer">
+    <div class="row follow ">
+      <h4>Follow me on</h4>
+      <hr> 
+        
+          <a  class="ft" href="https://www.facebook.com/athira.ra.35"><i class="fab fa-facebook" style="font-size: 20px; margin-left: 10px; "></i>Facebook </a> 
+        
+          <a  class="ft" href="#"><i class="fab fa-instagram" style="font-size: 20px; margin-left: 10px; padding-top: 10px;"></i>Instagram</a>
+        
+        
+
+    </div>
+    <div class="copyr">
+     <p>All rights reserved @ Athira VK</p>
+      <p>Designed by Yen Kye</p>
+    </div>
+  </div>
+  
+</footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -93,6 +168,8 @@
       document.getElementById("mySidepanel").style.width = "0";
     }
   </script>
+
+  
 </body>
 
 </html>
